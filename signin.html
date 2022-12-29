@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/main.css">
+<title>THÔNG TIN SINH VIÊN</title>
+</head>
+<body>
+    <div>
+        <img class="img1" src="./images-1/apple-touch-icon.png" alt="">
+        <p class="title1">THÔNG TIN SINH VIÊN</p>
+    </div>
+<button class="login1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng Nhập</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="./link30.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./images-1/avatar-trang-y-nghia.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>MSSV</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="login2" type="submit">Đăng Nhập</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Ghi Nhớ
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy Bỏ</button>
+      <span class="psw">Quên <a href="mailto:abc@student.hcmue.vn">mật khẩu?</a></span>
+    </div>
+  </form>
+</div>
+
+<script src="./src/main.js">
+
+</script>
+
+</body>
+</html>
